@@ -1,9 +1,25 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>JS - One</title>
-    </head>
-    <body>
-        <h1>Javascript Tutorial One</h1>
-    </body>
+
+<head>
+    <title>JS - One</title>
+</head>
+
+<body>
+    <h1 class="heading">Javascript Tutorial One</h1>
+    <h2 id="myID0" class="heading">We are starting with JS</h2>
+    <h2 class="heading">DOM - Document Object Model</h2>
+    <h3 class="heading">What is the DOM?</h3>
+    <hr/>
+    <p>
+        The Document Object Model (DOM) is a programming interface for web documents. It represents the structure of a
+        document as a tree of objects, allowing programs to change the document's structure, style, and content. The DOM
+        provides a way to manipulate HTML and XML documents through scripting languages like JavaScript.
+    </p>
+    <script>
+        document.getElementById("myID0").style.color = "#4211aa";
+        document.getElementsByClassName("heading")[0].style.textDecoration = "underline";
+    </script>
+</body>
+
 </html>
