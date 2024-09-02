@@ -3,12 +3,16 @@
 
 <head>
     <title>JS - One</title>
+    <script src="js/js.js"></script>
 </head>
 
 <body>
+    <button onclick="changeBGColor(this)">Change Background Color</button>
     <h1 class="heading">Javascript Tutorial One</h1>
     <h2 id="myID0" class="heading">We are starting with JS</h2>
-    <h2 class="heading">DOM - Document Object Model</h2>
+    <h2 class="heading" id="head0">DOM - Document Object Model</h2>
+    <button onclick="addFont(this)">Font Size +</button>
+    <button onclick="reduceFont(this)">Font Size -</button>
     <h3 class="heading">What is the DOM?</h3>
     <hr/>
     <p>
@@ -19,6 +23,18 @@
     <script>
         document.getElementById("myID0").style.color = "#4211aa";
         document.getElementsByClassName("heading")[0].style.textDecoration = "underline";
+        function addFont(btn){
+            currentSize = parseInt(getComputedStyle(document.getElementById("head0")).fontSize);
+            newSize = currentSize + 1;
+            document.getElementById("head0").style.fontSize = newSize + 'px';
+            console.log("Font Size added");
+        }
+        function reduceFont(btn){
+            currentSize = parseInt(getComputedStyle(document.getElementById("head0")).fontSize);
+            newSize = currentSize - 1;
+            document.getElementById("head0").style.fontSize = newSize + 'px';
+            console.log("Font Size reduced");
+        }
     </script>
 </body>
 
