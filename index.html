@@ -20,22 +20,7 @@
         document as a tree of objects, allowing programs to change the document's structure, style, and content. The DOM
         provides a way to manipulate HTML and XML documents through scripting languages like JavaScript.
     </p>
-    <script>
-        document.getElementById("myID0").style.color = "#4211aa";
-        document.getElementsByClassName("heading")[0].style.textDecoration = "underline";
-        function addFont(btn){
-            currentSize = parseInt(getComputedStyle(document.getElementById("head0")).fontSize);
-            newSize = currentSize + 1;
-            document.getElementById("head0").style.fontSize = newSize + 'px';
-            console.log("Font Size added");
-        }
-        function reduceFont(btn){
-            currentSize = parseInt(getComputedStyle(document.getElementById("head0")).fontSize);
-            newSize = currentSize - 1;
-            document.getElementById("head0").style.fontSize = newSize + 'px';
-            console.log("Font Size reduced");
-        }
-    </script>
 </body>
+
 
 </html>
